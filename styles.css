@@ -1,0 +1,288 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+
+/* Header dan Navbar */
+#header {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  color: #2c2c2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#header p {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#header-img {
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+
+#nav-bar ul {
+  display: flex;
+  list-style: none;
+}
+
+#nav-bar ul li {
+  margin: 0 1rem;
+}
+
+#nav-bar ul li a {
+  color: #2c2c2c;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#nav-bar ul li a:hover {
+  color: #ffd700;
+}
+
+/* Section umum */
+section {
+  padding: 100px 20px 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2c2c2c;
+}
+
+/* Home Section */
+#home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#home p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Form */
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 400px;
+}
+
+#email {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#submit {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #2c2c2c;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#submit:hover {
+  background: #ffd700;
+  color: #000;
+}
+
+#features {
+  background-color: #2c2c2c;
+  height: 100dvh;
+}
+
+#features h2 {
+color: white;
+}
+
+/* Features */
+.feature-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  background: #fff;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 2px white;
+  transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px white;
+}
+
+/* Icon */
+.feature-box i {
+  font-size: 40px;
+  color: #ffd700;
+  flex-shrink: 0;
+  padding-top: 10px;
+}
+
+/* Bagian teks */
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.feature-text h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.feature-text p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Video */
+#video {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  background: #000;
+}
+
+#pricing {
+  padding: 50px 20px;
+  background: #dedede;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pricing-box {
+  background: #fff;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.pricing-box:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-box h3 {
+  background: #2c2c2c;
+  color: #fff;
+  margin: 0;
+  padding: 15px;
+  font-size: 1.3rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #333;
+}
+
+.pricing-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.pricing-box ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.pricing-box button {
+  background: #2c2c2c;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pricing-box button:hover {
+  background: #ffd700;
+  color: #2c2c2c;
+}
+
+/* Footer */
+footer {
+  background: #2c2c2c;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #nav-bar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  #nav-bar ul li {
+    margin: 5px 0.5rem;
+  }
+
+  #video {
+    width: 95%;
+  }
+}
